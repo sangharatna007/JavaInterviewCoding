@@ -1,0 +1,95 @@
+ Poly means many and morph means shapes or forms. So. Polymorphism refers to any entity which takes many form.
+
+Polymorphism in java refers to any entity whether it is an operator or a constructor or any method
+which takes many forms or can be used for multiple tasks either while compiling or while running a java program.
+
+
+There are two types of polymorphism in Java.   1) Static Polymorphism       2) Dynamic Polymorphism
+
+
+1) Static Polymorphism
+
+    Any entity which shows polymorphism during compile time is called static polymorphism. Operator Overloading,
+    Constructor Overloading and method overloading are best examples of static polymorphism. Because, they show polymorphism during compilation.
+
+ In static polymorphism, object used is determined during compilation itself. So, it is called static binding or Early Binding.
+
+ Operator Overloading : For example, Operator ‘+’ can be used to add two numbers and also can be used to concatenate two strings.
+ It is called operator overloading. ‘+’ is the only operator in java which is used for operator overloading
+
+ Constructor Overloading : We can include multiple constructors in a class. This is called constructor overloading.
+ Through constructor overloading, we can create objects to the class in multiple ways. This shows the polymorphism.
+
+ Method Overloading : We can have different forms of same method in the same class. This is called method overloading.
+ Through method overloading we can perform different tasks through different forms of the same method.
+ This shows the polymorphism.
+
+ class A
+ {
+      //Some Statements
+ }
+ class B extends A
+ {
+      //Some Statements
+ }
+ class C extends B
+ {
+     //Some Statements
+ }
+
+ public class D
+ {
+     public static void main(String[] args)
+     {
+         A a = new A();  //A-Class variable refers to A-Class object
+         a = new B();    //A-Class variable refers to B-Class object
+         a = new C();    //A-Class variable refers to C-Class object
+     }
+ }
+
+
+ 2) Dynamic Polymorphism
+
+ Any entity which shows polymorphism during run time is called dynamic polymorphism.
+ Method Overriding is the best example of dynamic polymorphism.
+ It is also called dynamic binding or late binding, because type of the object used will be determined at run time only.
+
+ class SuperClass
+ {
+     void methodOfSuperClass()
+     {
+         System.out.println("From Super Class");
+     }
+ }
+ class SubClass extends SuperClass
+ {
+     //Super Class Method Overrided
+     void methodOfSuperClass()
+     {
+         System.out.println("From Sub Class");
+     }
+ }
+
+ public class D
+ {
+     static void util(SuperClass superclass)
+     {
+         superclass.methodOfSuperClass();
+         //For each execution of this method, different objects will be passed to it.
+         //which Object will be used is determined during run time only.
+         //This shows dynamic polymorphism.
+     }
+
+     public static void main(String[] args)
+     {
+         SuperClass superclass1 = new SuperClass();
+         SubClass subclass = new SubClass();
+         SuperClass superclass2 = new SubClass();
+
+         util(superclass1);  //SuperClass object is passes to util()
+         util(subclass);     //SubClass object is passed to util()
+         util(superclass2); //SubClass object is passed to util()
+     }
+ }
+
+

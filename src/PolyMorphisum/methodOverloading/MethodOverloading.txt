@@ -1,0 +1,58 @@
+Method OverLoading :-
+
+When a class has more than one method with same name, then we call that method is overloaded.
+The overloaded methods will have different number of arguments or different types of arguments, but name of the methods remains same.
+
+method signature consist of three things, 1) Method Name   2) Number Of Arguments   3) Types of arguments.
+
+
+Example :
+
+public class MethodOverloading
+{
+    void methodOverloaded()
+    {
+        //No argument method
+    }
+
+    void methodOverloaded(int i)
+    {
+        //One argument is passed
+    }
+
+    void methodOverloaded(double d)
+    {
+        //One argument is passed but type of argument is different
+    }
+
+    void methodOverloaded(int i, double d)
+    {
+        //Two argument method
+        //Method signature of this method is methodOverloaded(int, double)
+    }
+
+    void methodOverloaded(double d, int i)
+    {
+        //It is also two argument method but type of arguments changes
+        //Method signature of this method is methodOverloaded(double, int)
+    }
+
+    void methodOverloaded(double d1, int i1)
+    {
+                //It has same method signature methodOverloaded(double, int) as of above method
+        //So, it is a Duplicate method, You will get compile time error here
+    }
+
+    void differentMethod()
+    {
+        //Different method
+    }
+}
+
+
+Important Note :
+----------------
+
+ If two methods have same signature and different return types, then those methods will not be treated as two different methods or methods overloaded.
+ For duplication, compiler checks only method signature not return types.If method signature is same, straight away it gives duplicate method error.
+
