@@ -1,0 +1,10 @@
+Difference Between Static Binding And Dynamic Binding In Java
+
+Binding refers to the link between method call and method definition.
+
+Static Binding	                                    Dynamic Binding
+It is a binding that happens at compile time.	     It is a binding that happens at run time.
+Actual object is not used for binding.	            Actual object is used for binding.
+It is also called early binding because binding happens during compilation.	It is also called late binding because binding happens at run time.
+Method overloading is the best example of static binding.	Method overriding is the best example of dynamic binding.
+Private, static and final methods show static binding.      Because, they can not be overridden.	Other than private, static and final methods show dynamic binding. Because, they can be overridden.

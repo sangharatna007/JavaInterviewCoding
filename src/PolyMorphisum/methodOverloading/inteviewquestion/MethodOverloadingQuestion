@@ -1,0 +1,45 @@
+1) What is method overloading?
+
+When a class has more than one method with same name but different parameters, then we call those methods are overloaded.
+Overloaded methods will have same name but different number of arguments or different types of arguments.
+
+2) What is method signature? What are the things it consist of?
+
+Method signature is used by the compiler to differentiate the methods. Method signature consist of three things.
+
+a) Method name
+
+b) Number of arguments
+
+c) Types of arguments
+
+3) Can we declare one overloaded method as static and another one as non-static?
+
+Yes. Overloaded methods can be either static or non static.
+
+4) How do compiler differentiate overloaded methods from duplicate methods?
+
+Compiler uses method signature to check whether the method is overloaded or duplicated. Duplicate methods will have same method signatures i.e same name, same number of arguments and same types of arguments.
+Overloaded methods will also have same name but differ in number of arguments or else types of arguments.
+
+5) Is it possible to have two methods in a class with same method signature but different return types?
+
+No, compiler will give duplicate method error. Compiler checks only method signature for duplication not the return types.
+If two methods have same method signature, straight away it gives compile time error.
+
+
+7) Can overloaded methods be synchronized?
+
+Yes. Overloaded methods can be synchronized
+
+8) Can we overload main() method?
+
+Yes, we can overload main() method.
+A class can have any number of main() methods but execution starts from public static void main(String[] args) only.
+
+9) Can we declare overloaded methods as final?
+
+Yes, we can declare overloaded methods as final.
+
+
+
