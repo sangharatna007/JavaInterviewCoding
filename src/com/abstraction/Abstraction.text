@@ -1,0 +1,29 @@
+In the computer science perspective, Abstraction is the process of separating ideas from their action.
+  Abstraction is used to separate ideas from their implementation.
+  Abstraction in java is used to define only ideas in one class so that the idea can be implemented by its sub classes according to their requirements.
+  Abstraction in java is implemented using Abstract classes and interfaces.
+
+  Example :
+
+  abstract class Animal
+{
+    abstract void soundOfAnimal();  // It is just an idea
+}
+
+class Cat extends Animal
+{
+    void soundOfAnimal()
+    {
+        System.out.println("Meoh");
+        //Implementation of the idea according to requirements of sub class
+    }
+}
+
+class Dog extends Animal
+{
+    void soundOfAnimal()
+    {
+        System.out.println("Bow Bow");
+        //Implementation of the idea according to requirements of sub class
+    }
+}

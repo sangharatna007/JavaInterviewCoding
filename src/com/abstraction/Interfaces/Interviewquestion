@@ -1,0 +1,43 @@
+Java Interview Questions On Interfaces :
+1) Can interfaces have constructors, SIB and IIB?
+
+No. Interfaces can’t have constructors, SIB and IIB. They show 100% abstractness.
+
+2) Can we re-assign a value to a field of interfaces?
+
+No. The fields of interfaces are static and final by default. They are just like constants. You can’t change their value once they got.
+
+3) Can we declare an Interface with “abstract” keyword?
+
+Yes, we can declare an interface with “abstract” keyword. But, there is no need to write like that. All interfaces in java are abstract by default.
+
+4) For every Interface in java, .class file will be generated after compilation. True or false?
+
+True. .class file will be generated for every interface after compilation.
+
+5) Can we override an interface method with visibility other than public?
+
+No. While overriding any interface methods, we should use public only. Because, all interface methods are public by default and you should not reduce the visibility while overriding them.
+
+6) Can interfaces become local members of the methods?
+
+No. You can’t define interfaces as local members of methods like local inner classes. They can be a part of top level class or interface.
+
+7) Can an interface extend a class?
+
+No, a class can not become super interface to any interface. Super interface must be an interface. That means, interfaces don’t extend classes but can extend other interfaces.
+
+8) Like classes, does interfaces also extend Object class by default?
+
+No. Interfaces don’t extend Object class. ( Click here for more )
+
+9) Can interfaces have static methods?
+
+No. Interfaces can’t have static methods.
+
+10) Can an interface have a class or another interface as it’s members?
+
+Yes. Interfaces can have classes or interfaces as their members.
+
+11) What are marker interfaces? What is the use of marker interfaces?
+

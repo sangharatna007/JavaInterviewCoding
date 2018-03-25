@@ -1,0 +1,51 @@
+1) Abstract class must have only abstract methods. True or false?
+
+False. Abstract methods can also have concrete methods.
+
+2) Is it compulsory for a class which is declared as abstract to have at least one abstract method?
+
+Not necessarily. Abstract class may or may not have abstract methods.
+
+3) Can we use “abstract” keyword with constructor, Instance Initialization Block and Static Initialization Block?
+
+No. Constructor, Static Initialization Block, Instance Initialization Block and variables can not be abstract.
+
+4) Why final and abstract can not be used at a time?
+
+Because, final and abstract are totally opposite in nature. A final class or method can not be modified further where as abstract class or method must be modified further. “final” keyword is used to denote that a class or method does not need further improvements. “abstract” keyword is used to denote that a class or method needs further improvements.
+
+5) Can we instantiate a class which does not have even a single abstract methods but declared as abstract?
+
+No, We can’t instantiate a class once it is declared as abstract even though it does not have abstract methods.
+
+6) Can we declare abstract methods as private? Justify your answer?
+
+No. Abstract methods can not be private. If abstract methods are allowed to be private, then they will not be inherited to sub class and will not get enhanced.
+
+7) We can’t instantiate an abstract class. Then why constructors are allowed in abstract class?
+
+It is because, we can’t create objects to abstract classes but we can create objects to their sub classes. From sub class constructor, there will be an implicit call to super class constructor. That’s why abstract classes should have constructors. Even if you don’t write constructor for your abstract class, compiler will keep default constructor.
+
+8) Can we declare abstract methods as static?
+
+No, abstract methods can not be static.
+
+9) Can a class contain an abstract class as a member?
+
+Yes, a class can have abstract class as it’s member.
+
+10) Abstract classes can be nested. True or false?
+
+True. Abstract classes can be nested i.e an abstract class can have another abstract class as it’s member.
+
+11) Can we declare abstract methods as synchronized?
+
+No, abstract methods can not be declared as synchronized. But methods which override abstract methods can be declared as synchronized.
+
+12) Can we declare local inner class as abstract?
+
+Yes. Local inner class can be abstract.
+
+13) Can abstract method declaration include throws clause?
+
+Yes. Abstract methods can be declared with throws clause.
